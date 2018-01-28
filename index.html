@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GifTastic</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+</head>
+<body>
+	
+	<header>
+
+		<!-- Rendered Buttons will get Dumped Here  -->
+		<div id="buttons-view"></div>
+	</header>
+	<div>
+		<div class="row">
+			
+			<div class="col-md-9" id="gifs"></div>
+			
+			
+			<form class="col-md-2" id="gif-form">
+				<label for="topic-input">Add an animation movie</label>
+				<input type="text" id="topic-input"><br>
+				<!-- Button triggers new topic to be added -->
+				<input id="add-animal" class="btn btn-outline-secondary" type="submit" value="Submit">
+			</form>
+			
+		</div>
+				
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>

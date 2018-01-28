@@ -1,0 +1,38 @@
+body {
+	background-color: #FFC300 !important;
+	color: #6c757d !important;
+}
+
+label {
+	font-family:'Graduate', cursive;
+}
+
+button,
+div,
+form,
+input {
+  margin: 10px;
+}
+
+form {
+	float: right;
+}
+
+button.topic {
+	margin: 10px;
+	font-family:'Graduate', cursive;
+}
+
+img.gif {
+	margin: 10px;
+	margin-top: 40px;
+}
+
+input#add-animal.btn.btn-outline-secondary {
+	margin-top: 15px;
+	font-family:'Graduate', cursive;
+}
+
+img.gif{
+	border: 2px solid purple;
+}
