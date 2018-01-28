@@ -15,4 +15,3 @@ Enjoy!
 ### Javascript
 ### JQuery
 ### API
-### Skeleton Framework
