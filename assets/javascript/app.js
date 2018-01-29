@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 		// Initial array of topics
-		var topics = ["minions", "kung fu panda", "frozen", "toy story", "finding nemo", "moana", "big hero 6", "aladdin", "bambi", "the little mermaid", "tangled", "up", "angry birds", "monsters inc"]
+		var topics = ["minions", "kung fu panda", "frozen", "toy story", "finding nemo", "moana", "big hero 6", "aladdin", "bambi", "the little mermaid", "tangled", "angry birds", "monsters inc"]
 
 		// displayGif function re-renders the HTML to display the appropriate content
 		function displayGif() {
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
 			var topic = $(this).attr("data-name");
-			var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=aRhRog3C513qX0Hp16d4dJvm1XRTrQvG&limit=10&rating=pg&g";
+			var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=aRhRog3C513qX0Hp16d4dJvm1XRTrQvG&limit=10&rating=pg";
 
 			//// Creating an AJAX call for the specific animal button being clicked
 
