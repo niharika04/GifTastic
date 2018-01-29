@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
 			var topic = $(this).attr("data-name");
-			var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=aRhRog3C513qX0Hp16d4dJvm1XRTrQvG&limit=10";
+			var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=aRhRog3C513qX0Hp16d4dJvm1XRTrQvG&limit=10&rating=pg&g";
 
 			//// Creating an AJAX call for the specific animal button being clicked
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
 				console.log(response);
 				
 				for (var i = 0; i < response.data.length; i++) {
-
+					var gifDiv = $("<div class = 'gif-items'>");
 					var newImg = $("<img>")
 					newImg.addClass('gif')
 					var still = response.data[i].images.fixed_height_still.url
@@ -30,8 +30,9 @@ $(document).ready(function() {
 					newImg.attr('data-state', 'still')
 					newImg.attr('data-still', still)
 					newImg.attr('data-moving', moving)
-					newImg.text(response.data[i].rating);
-					$('#gifs').append(newImg);
+					$(gifDiv).append('<p>Rating: ' + response.data[i].rating + '</p>')
+					$(gifDiv).append(newImg);
+					$('#gifs').append(gifDiv);
 
 				}
 
